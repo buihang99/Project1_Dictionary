@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@start.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Control.Start">
+   <children>
+      <ImageView fx:id="background" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image backgroundLoading="true" url="@../image/background.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="214.0" layoutY="78.0" mnemonicParsing="false" onAction="#search" prefHeight="34.0" prefWidth="156.0" text="Search" textFill="#400202">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="214.0" layoutY="138.0" mnemonicParsing="false" onAction="#saved" prefHeight="34.0" prefWidth="156.0" text="Saved Word">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="214.0" layoutY="200.0" mnemonicParsing="false" onAction="#about" prefHeight="34.0" prefWidth="156.0" text="About Us">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="exitbutton1" layoutX="214.0" layoutY="256.0" mnemonicParsing="false" onAction="#exit" prefHeight="34.0" prefWidth="156.0" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label layoutX="242.0" layoutY="14.0" prefHeight="47.0" prefWidth="101.0" text="LaLaDi" textFill="#0000ee">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

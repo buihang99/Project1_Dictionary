@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Control.About">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/background.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="149.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đại học Bách Khoa Hà Nội" wrappingWidth="301.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="203.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bùi Thị Hằng_20173097" wrappingWidth="193.6171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="168.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 1.5em;" text="Ứng dụng tra cứu từ điển " textAlignment="CENTER" wrappingWidth="263.6171875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="219.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khoa học máy tính 04" wrappingWidth="160.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="backbutton1" layoutX="332.0" layoutY="300.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: purple;" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="exitbutton2" layoutX="194.0" layoutY="300.0" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="60.0" style="-fx-border-color: purple;" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="65.0" fitWidth="60.0" layoutX="278.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

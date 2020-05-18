@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Control.Search">
+      <children>
+      <ImageView fitHeight="475.0" fitWidth="700.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/background.jpg" />
+         </image>
+      </ImageView>
+      <TableView id="tablesearch" fx:id="tableMean" layoutX="17.0" layoutY="113.0" prefHeight="228.0" prefWidth="667.0" style="-fx-font-size: 1.25em;">
+        <columns>
+          <TableColumn fx:id="type" minWidth="0.0" prefWidth="92.0" text="Từ loại" />
+          <TableColumn fx:id="vietnam" minWidth="3.0" prefWidth="216.0" text="Nghĩa" />
+            <TableColumn fx:id="example" prefWidth="358.0" text="Ví dụ" />
+        </columns>
+      </TableView>
+      <Button layoutX="487.0" layoutY="384.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="66.0" style="-fx-border-color: purple;" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitbutton3" layoutX="160.0" layoutY="384.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="66.0" style="-fx-border-color: purple;" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="317.0" layoutY="383.0" mnemonicParsing="false" onAction="#save" prefHeight="30.0" prefWidth="92.0" style="-fx-border-color: purple;" text="Save Word">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+          <Button id="button1" layoutX="551.0" layoutY="44.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#search" prefHeight="39.0" prefWidth="39.0" style="-fx-border-color: purple;">
+              <font>
+                  <Font size="15.0" />
+              </font>
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/search_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+          </Button>
+          <TextField fx:id="englishword" centerShape="false" layoutX="185.0" layoutY="44.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onKeyPressed="#key" prefHeight="39.0" prefWidth="362.0" promptText="Tra từ Anh Việt" style="-fx-border-color: purple;">
+              <font>
+                  <Font size="16.0" />
+              </font>
+      </TextField>
+      </children>
+  </AnchorPane>
